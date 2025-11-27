@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChanduLabs — AI Voice Clone Live Chat</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 10px; }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    select, button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      background: white;
+      font-size: 15px;
+    }
+    .controls { margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; }
+    #log {
+      margin-top: 15px;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      font-size: 13px;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ChanduLabs — Live Talking AI (Your Cloned Voice)</h1>
+
+  <p>Type text or use the mic. The bot replies using your cloned voice.</p>
+
+  <textarea id="text" rows="5">Hello! This is ChanduLabs demo.</textarea>
+
+  <div class="controls">
+    <select id="lang">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="te">Telugu</option>
+      <option value="ta">Tamil</option>
+      <option value="kn">Kannada</option>
+      <option value="ml">Malayalam</option>
+      <option value="bn">Bengali</option>
+    </select>
+
+    <button id="micBtn">🎤 Hold to Record</button>
+    <button id="speakBtn">Speak</button>
+    <button id="stopBtn">Stop Audio</button>
+  </div>
+
+  <div id="log">Ready.</div>
+
+  <!-- Frontend script -->
+  <script src="/app.js"></script>
+
+</body>
+</html>
